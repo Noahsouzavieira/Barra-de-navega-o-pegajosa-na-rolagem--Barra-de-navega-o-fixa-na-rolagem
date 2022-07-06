@@ -1,0 +1,102 @@
+
+DESCRIÇÃO DO PROJETO
+
+
+Este projeto têm como finalidade testar conhecimentos ao nível INICIANTE, utilizando a linguagem de programação Javascript, a linguagem de marcação HTML5 e CSS (Cascading Style Sheet, ou Folha de Estilo em Cascatas), para a estilização de componentes; desenvolvendo com essas ferramentas um projeto de "Barra de Navegação com Javascript".
+Sua funcionalidade se baseia em :
+
+Ao utilizar a barra de rolamento, o cabeçalho de informações ("Menu") irá percorrer até as páginas seguintes mantendo-se fixo ao topo, e irá também alterar cor de fundo e das letras.
+
+Passo a passo do projeto:
+
+1- Na sua própria máquina,no seu desktop, crie uma pasta ; está será responsável em armazenar todos os arquivos desenvolvidos durante o projeto.
+
+2- Coloque o nome da pasta de sua preferência(aconselho a colocar o nome de seu projeto).
+
+3- Já com o seu editor de código instalado na máquina; abra o seu editor(Eu utilizo o Visual Studio Code).
+
+4- No seu cabeçalho, procure em "Arquivo" e "Abrir Pasta"; nesse momento você deve encontrar o seu projeto e abri-lo.
+
+5- Faça pastas dentro da pasta do seu projeto a ser desenvolvido, estas iram conter arquivos de javascript, html e css.Nesse Projeto, a pasta do  "NOME DO PROJETO", irá conter duas pastas(js e css), no qual dentro dessas pastas irá possuir arquivos de css, javascript, e um html(este mantive solto sem uma pasta em particular).
+
+6- Nomeie os arquivos de maneira que seja direta, e sem complicações para evitar dificuldades em vincular ao longo do processo de desenvolvimento do projeto.
+Nesse projeto; foi nomeados os arquivos da seguinte maneira; 
+para a pasta correspondente de css, a pasta css possui o arquivo style.css;
+e o arquivo html, foi nomeado de index.html.
+
+
+//FEITO TODOS OS PROCEDIMENTOS ANTERIORES É HORA DE COMEÇAR A CODAR! 
+
+1-Iniciaremos com a construição do cabeçalho, no arquivo de html.
+Dentro do Body faremos header que irá conter classes(logo, banner), e distribuindo itens em formas de listas (ul e li) para personalizar o cabeçalho. 
+<body>
+    <header>
+        <a href="#" class="logo"> Logo </a>
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Sobre</a>
+            </li>
+            <li>
+                <a href="#"> Serviços</a>
+            </li>
+            <li>
+                <a href="#"> Portifólio </a>
+            </li>
+            <li>
+                <a href="#"> Equipe </a>
+            </li>
+            <li>
+                <a href="#"> Contato </a>
+            </li>
+        </ul>
+    </header>
+    <section class="banner"></section>
+</body>
+
+
+2- Para personalizar devemos utilizar o css, usando o comando de vinculação no html no head.
+<head>
+<link rel="stylesheet" href="css/style.css">
+</head>
+Assim será possível acessar o arquivo de maneira externa.
+
+3- Pensando nas vinculações para a funcionalidade dos elementos. Adicionamos a fonte externa para estilização das letras, no html, dentro do head. 
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+</head>
+
+4- No CSS, irá configurar dando valor no seletor universal o box-sizing para border-box;
+
+*{box-sizing: border-box;}
+
+A propriedade CSS box-sizing é utilizada para alterar a propriedade padrão da box model, pois ao abrir o projeto no navegador ela terá seu próprio estilo padrão, que nem sempre irá corresponder ao layout proposto do projeto.
+
+5-  No arquivo CSS,Iremos adicionar no header o transition; para ao deslizar a barra de navegação as cores de fundo e letras do cabeçalho pra que possam alterar em determinado tempo. Adicionar text-transform em uppercase; para alteração de cores ao deslizar a barra; e position fixed, para que o elemento que recebeu essa propriedade não se mova, ou seja ele ficará fixo em relação a tela, alterando o position static (que é o padrão de posicionamento do elemento).
+
+6- Para concluir a condição de rolamento,
+personalizamos o header e os elementos(listas) com o position em relative, que será para alterar a posição de um elemento tendo como referência a posição inicial dele próprio. Assim ao aplicar essa propriedade no elemento, ele não mudará de posição, pois já vai estar posicionado em sua posição de referência. 
+
+7- O justify-content e o display irão organizar as listas que estavam em vertical para horizontal.
+
+8- Na classe banner, irá ser colocada a imagem de fundo e background-size: cover (Este irá ajustar a imagem o mais largamente possível e manterá sua proporção -a imagem não ficará "esticada". A imagem "cobre" o container inteiro, tanto em altura como em largura. Quando a imagem e o container têm diferentes dimensões,a imagem ultrapassa os limites do container em qualquer direção, para continuar mantendo a proporção. 
+
+9- Declarados os valores da propriedade position para que o z-index tenha efeito;É importante que determine o valor 
+do eixo Z (é responsável pelo cálculo e posicionamento da profundidade de um determinado elemento em relação à tela, se estará mais afastado ou mais próximo).
+
+10- Por fim para finalizarmos o projeto, usaremos o linguagem de programação javascript para a interação.
+No qual o sticky, será de fundamental importância, para troca de cores, entre outras funcionalidades que desejamos para o projeto.
+
+Para visualizar o funcionamento do projeto em vídeo:
+
+https://www.instagram.com/p/CfmnZfRpEZf/
+
+Para reproduzir o projeto em sua máquina confira o código:
+https://github.com/Noahsouzavieira
+
+O projeto realizado foi apenas desenvolvido com fins Acadêmicos e sem vínculos comerciais.
+
+Sigam-me no instagram:
+instagram :@noahdeveloper
